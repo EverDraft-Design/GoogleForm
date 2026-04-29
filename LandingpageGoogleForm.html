@@ -1,0 +1,278 @@
+```html id="a7619"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>EverDraft — Launching Soon</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#12071f;
+  --bg2:#24113c;
+  --gold:#d4af37;
+  --gold2:#f2d57b;
+  --text:#f8f4ec;
+  --muted:#d3c9df;
+  --line:rgba(255,255,255,.08);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  color:var(--text);
+  background:
+  radial-gradient(circle at top right,#321956 0%,#12071f 55%),
+  linear-gradient(180deg,#12071f,#0c0615);
+  min-height:100vh;
+}
+
+.container{
+  width:min(1100px,92%);
+  margin:auto;
+}
+
+header{
+  padding:24px 0;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.logo-mark{
+  width:52px;
+  height:52px;
+  border:1px solid var(--gold);
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-family:'Cormorant Garamond',serif;
+  font-size:32px;
+  color:var(--gold2);
+}
+
+.logo-text{
+  font-family:'Cormorant Garamond',serif;
+  font-size:40px;
+  color:var(--gold2);
+}
+
+.hero{
+  text-align:center;
+  padding:70px 0 55px;
+}
+
+.badge{
+  display:inline-block;
+  padding:8px 14px;
+  border:1px solid rgba(212,175,55,.35);
+  border-radius:999px;
+  color:var(--gold2);
+  font-size:13px;
+  margin-bottom:24px;
+}
+
+h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:74px;
+  line-height:.95;
+  margin-bottom:20px;
+}
+
+.gold{
+  color:var(--gold2);
+}
+
+.sub{
+  font-size:21px;
+  color:var(--muted);
+  max-width:760px;
+  margin:auto auto 34px;
+  line-height:1.6;
+}
+
+.btn{
+  display:inline-block;
+  padding:16px 30px;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:600;
+  transition:.2s ease;
+}
+
+.btn-gold{
+  background:linear-gradient(135deg,var(--gold2),var(--gold));
+  color:#1b1202;
+}
+
+.btn-outline{
+  border:1px solid var(--gold);
+  color:var(--text);
+  margin-left:12px;
+}
+
+.section{
+  padding:55px 0;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.card{
+  padding:28px;
+  border-radius:18px;
+  background:rgba(255,255,255,.03);
+  border:1px solid var(--line);
+}
+
+.card h3{
+  color:var(--gold2);
+  margin-bottom:10px;
+}
+
+.footer-box{
+  margin-top:30px;
+  padding:34px;
+  text-align:center;
+  border-radius:20px;
+  background:rgba(255,255,255,.03);
+  border:1px solid var(--line);
+}
+
+footer{
+  text-align:center;
+  color:var(--muted);
+  padding:40px 0;
+  border-top:1px solid var(--line);
+  margin-top:40px;
+}
+
+@media(max-width:900px){
+
+  h1{
+    font-size:52px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .btn-outline{
+    margin-left:0;
+    margin-top:12px;
+    display:block;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <div class="logo-mark">E</div>
+        <div class="logo-text">EverDraft</div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+
+    <div class="badge">Launching Soon</div>
+
+    <h1>
+      A New Home For <span class="gold">Writers</span>
+    </h1>
+
+    <p class="sub">
+      Publish stories chapter by chapter, gain feedback, grow your audience,
+      and connect with readers who love discovering new worlds.
+    </p>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdja0SmqQo6NbtsFCc6Y9OROKpkA7qkTUdTB_wlDQn5D4QYLA/viewform?usp=header"
+       target="_blank"
+       class="btn btn-gold">
+       Join the Waitlist
+    </a>
+
+    <a href="#about" class="btn btn-outline">
+      Learn More
+    </a>
+
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container">
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Write</h3>
+        <p>Share your fiction chapter by chapter in a platform built for storytellers.</p>
+      </div>
+
+      <div class="card">
+        <h3>Grow</h3>
+        <p>Receive reader feedback, build followers, and improve with every release.</p>
+      </div>
+
+      <div class="card">
+        <h3>Connect</h3>
+        <p>Find readers, beta readers, editors, and future creative collaborators.</p>
+      </div>
+
+    </div>
+
+    <div class="footer-box">
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:44px;margin-bottom:14px;color:var(--gold2);">
+        Be First Through The Gates
+      </h2>
+
+      <p style="color:var(--muted);font-size:18px;margin-bottom:24px;">
+        Join early access and help shape the future of EverDraft.
+      </p>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdja0SmqQo6NbtsFCc6Y9OROKpkA7qkTUdTB_wlDQn5D4QYLA/viewform?usp=header"
+         target="_blank"
+         class="btn btn-gold">
+         Reserve Your Spot
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 EverDraft — Where Writers Grow Together
+</footer>
+
+</body>
+</html>
+```
+Ever
